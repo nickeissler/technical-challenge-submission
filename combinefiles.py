@@ -6,7 +6,6 @@ import os
 
 #Given a list of dataframes, combine them
 def combine_csv_files(input):
-    #Remove program name from list
     arguments = len(input)
     #Must be at least 2 args
     if (arguments <= 2):
