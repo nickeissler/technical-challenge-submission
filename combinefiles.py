@@ -12,12 +12,6 @@ def combine_csv_files(input):
     if (arguments <= 2):
         sys.exit("Error: At least two arguments required")
 
-    #Check if every argument is a valid file
-    for arg in input:
-        file_path = Path(arg)
-        if not (file_path.is_file()):
-            sys.exit("Error: At least one file does not exist")
-
     #Create list to store csv files
     df_list = []
     #Loop through every argument (that is not program name)
